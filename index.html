@@ -178,14 +178,65 @@
                         <img src="./Picture/Gitgit3.png" />
                 </dl>
             </ol>
-            <li>Basic Git commands</li>
+            <li>
+                <h3> <u> Basic Git commands </u></h3>
+            </li>
                 <ol>
-                    <li>git clone</li>
+                    <li>git clone (use to create a clone of your repository and download it in other to repear for edit it on Visual Studio Code)</li>
+                        <ul>
+                            <li>Syntax: git clone [{URL}]</li>
+                            <p>Copy and download your repository from the GitHub page</p>
+                            <p>In your <strong>repository</strong></p>
+                            <img src="./Picture/git clone 2.JPG" />
+                            <p>In your Visual Studio Code write syntax</p>
+                            <img src="./Picture/git clone 3.JPG" />
+                        </ul>
                     <li>config</li>
-                    <li>add</li>
-                    <li>commit</li>
-                    <li>push</li>
+                        <ul>
+                            <li>Syntax: git config</li>
+                            <p>Will show the list of <strong>git config command</strong></p>
+                            <img src="./Picture/Git config.JPG" />
+                            <li>Syntax: git config [{option}]</li>
+                            <p>The general syntax of <strong>the git config command</strong>, where <strong>option</strong> is the command the user wants to use</p>
+                            <li>Syntax: git config -l </li>
+                            <p>Open the git info list</p>
+                            <img src="./Picture/git config -l.JPG" />
+                            <li>*Syntax: git config --gobal user.name 'username'</li>
+                            <p>User Name Settings</p>
+                            <li>*Syntax: git config --gobal user.email 'useremail'</li>
+                            <p>User Email Settings</p>
+                            <p><strong> Note </strong>*:If they are not used, when using the <strong>push</strong> command will have an <strong>anonymous</strong>  error</p>
+                        </ul>
+                    <li>add (use after you <strong>make a changes</strong> in your file)</li>
+                        <ul>
+                            <li>Syntax: git add [{filename}]</li>
+                            <p>Add one file to index</p>
+                            <img src="./Picture/git add file name.JPG" />
+                            <li>Syntax: git add . </li>
+                            <p>Add all file to index</p>
+                            <img src="./Picture/gitadd.JPG" />
+                        </ul>
+                    <li>commit (use after you use <strong>git add</strong>)</li>
+                        <ul>
+                            <li>Syntax: git commit -m'message'</li>
+                            <p>Commit the changes to head (but not yet to the remote repository)</p>
+
+                            <li>Syntax: git commit -a</li>
+                            <p>Commit all file added to index with <strong>git add</strong>, and commit any tiles changed since them</p>
+
+                        </ul>
+                    <li>push (use after <strong>git commit</strong>)</li>
+                        <ul>
+                            <li>Syntax: git push [:remote:][:branch:]</li>
+                            <p>Used to push changes to remote repository </p>
+                            <p>In your Visual Studio Code</p>
+                            <p>In your remote repository </p>
+                        </ul>
                     <li>pull</li>
+                        <ul>
+                            <li>Syntax: git pull [:remote:][:branch:]</li>
+                            <p>Use to update the latest changes from the remote repository, and then put the content in your local repository.</p>
+                        </ul>
                 </ol>
         </ol>
             <p></p>
