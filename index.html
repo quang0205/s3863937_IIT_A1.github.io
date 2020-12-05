@@ -49,8 +49,23 @@
                         <li>pull</li>
                     </ol>
                 <li> How to resolve conflicts </li>
+                    <ol type="a">
+                        <li>What is conflicts?</li>
+                        <li>Solution</li>
+                    </ol>
                 <li> Branching </li>
+                    <ol type="a">
+                        <li>How to create a branch</li>
+                        <li>How to switch branches</li>
+                        <li>How to merge branches</li>
+                        <li>How to push branch to remote repository</li>
+                        <li>How to delete branches</li>
+                    </ol>
                 <li>Extra tutorial</li>
+                    <ol type="a">
+                        <li>Open Terminal screen</li>
+                        <li>cd command</li>
+                    </ol>
             </ol>
             <li>
                 <h3><u> Git and GitHub at a glance </u></h3>
@@ -182,7 +197,7 @@
                 <ol>
                     <li>git clone (use to create a clone of your repository and download it in other to repear for edit it on Visual Studio Code)</li>
                         <ul>
-                            <li>Syntax: git clone [{URL}]</li>
+                            <li><strong>Syntax:</strong> git clone [{URL}]</li>
                             <p>Copy and download your repository from the GitHub page</p>
                             <p>In your <strong>repository</strong></p>
                             <img src="./Picture/git clone 2.JPG" />
@@ -191,43 +206,43 @@
                         </ul>
                     <li>config</li>
                         <ul>
-                            <li>Syntax: git config</li>
+                            <li><strong>Syntax:</strong> git config</li>
                             <p>Will show the list of <strong>git config command</strong></p>
                             <img src="./Picture/Git config.JPG" />
-                            <li>Syntax: git config [{option}]</li>
+                            <li><strong>Syntax:</strong> git config [{option}]</li>
                             <p>The general syntax of <strong>the git config command</strong>, where <strong>option</strong> is the command the user wants to use</p>
-                            <li>Syntax: git config -l </li>
+                            <li><strong>Syntax:</strong> git config -l </li>
                             <p>Open the git info list</p>
                             <img src="./Picture/git config -l.JPG" />
-                            <li>*Syntax: git config --gobal user.name 'username'</li>
+                            <li>*<strong>Syntax:</strong> git config --gobal user.name 'username'</li>
                             <p>User Name Settings</p>
                             <img src="./Picture/Gift config username.JPG" />
-                            <li>*Syntax: git config --gobal user.email 'useremail'</li>
+                            <li>*<strong>Syntax:</strong> git config --gobal user.email 'useremail'</li>
                             <p>User Email Settings</p>
                             <img src="./Picture/Git config email.JPG" />
                             <p><strong> Note </strong>*:If they are not used, when using the <strong>push</strong> command will have an <strong>anonymous</strong>  error</p>
                         </ul>
                     <li>add (use after you <strong>make a changes</strong> in your file)</li>
                         <ul>
-                            <li>Syntax: git add [{filename}]</li>
+                            <li><strong>Syntax:</strong> git add [{filename}]</li>
                             <p>Add one file to index</p>
                             <img src="./Picture/git add file name.JPG" />
-                            <li>Syntax: git add . </li>
+                            <li><strong>Syntax:</strong> git add . </li>
                             <p>Add all file to index</p>
                             <img src="./Picture/gitadd.JPG" />
                         </ul>
                     <li>commit (use after you use <strong>git add</strong>)</li>
                         <ul>
-                            <li>Syntax: git commit -m'message'</li>
+                            <li><strong>Syntax:</strong> git commit -m'message'</li>
                             <p>Commit the changes to head (but not yet to the remote repository)</p>
                             <img src="./Picture/git commit -m.JPG" />
-                            <li>Syntax: git commit -a</li>
+                            <li><strong>Syntax:</strong> git commit -a</li>
                             <p>Commit all file added to index with <strong>git add</strong>, and commit any tiles changed since them</p>
 
                         </ul>
                     <li>push (use after <strong>git commit</strong>)</li>
                         <ul>
-                            <li>Syntax: git push [:remote:][:branch:]</li>
+                            <li><strong>Syntax:</strong> git push [:remote:][:branch:]</li>
                             <p>Used to push changes to remote repository </p>
                             <p>In your Visual Studio Code</p>
                             <img src="./Picture/Git push.JPG" />
@@ -236,7 +251,7 @@
                         </ul>
                     <li>pull</li>
                         <ul>
-                            <li>Syntax: git pull [:remote:][:branch:]</li>
+                            <li><strong>Syntax:</strong> git pull [:remote:][:branch:]</li>
                             <p>Use to update the latest changes from the remote repository, and then put the content in your local repository.</p>
                             <img src="./Picture/Git pull.JPG" />
                         </ul>
@@ -270,31 +285,60 @@
                 <ol>
                     <li>How to create a branch</li>
                         <ul>
-                            <li>Syntax: git branch 'branchname'</li>
+                            <li><strong>Syntax:</strong> git branch 'branchname'</li>
                             <img src="./Picture/git branch.JPG" />
                             <li>Location</li>
                             <img src="./Picture/git branch location.JPG" />
                         </ul>
                     <li>How to switch branches</li>
                         <ul>
-                            <li>Syntax: git checkout 'branchname'</li>
+                            <li><strong>Syntax:</strong> git checkout 'branchname'</li>
                             <img src="./Picture/git checkout.JPG" />
                         </ul>
                     <li>How to merge branches</li>
                         <ul>
-                            <li>Syntax: git merge 'branchname'</li>
+                            <li><strong>Syntax:</strong> git merge 'branchname'</li>
+                            <p>Only used successfully after committing</p>
+                            <img src="./Picture/git merge.JPG" />
                         </ul>
                     <li>How to push branch to remote repository</li>
+                        <ul>
+                            <li><strong>Syntax:</strong> git push --set-upstream origin 'branchname'</li>
+                            <img src="./Picture/git upstream branch.JPG" />
+                            <li>In the remote repository:</li>
+                            <img src="./Picture/git upstream branch 1.JPG" />
+                        </ul>
                     <li>How to delete branches</li>
+                        <ul>
+                            <li><strong>Syntax:</strong> git branch -d 'branchname'</li>
+                            <img src="./Picture/git delete.JPG" />
+                        </ul>
                 </ol>
         <li>
             <h3><u>Extra tutorial</u></h3>
         </li>
                 <ol>
                     <li>Open Terminal screen</li>
+                    <img src="./Picture/open terminal.png" />
                     <li>cd command</li>
-                    <li>git tag</li>
+                        <ul>
+                            <li><strong>Syntax:</strong> cd\</li>
+                            <p>Return to the root directory</p>
+                            <img src="./Picture/cd root 2.jpg" />
+                            <li><strong>Syntax:</strong> cd [Directory address]</li>
+                            <img src="./Picture/cd root 3.jpg" />
+                            <li><strong>Syntax:</strong> cd.. </li>
+                            <p>Go to the previous location 1 folder</p>
+                            <img src="./Picture/cd.JPG" />
+                        </ul>
                 </ol>
         </ol>
+        <p class="ending">Author: Nguyen Nhat Quang
+            </br>
+            Student ID: 3863937 </br>
+            Assignments: Group Participation </br>
+            Lecturer: Dr. Duy Dang Pham </br>
+            Course code and name: COSC2083 Intro to IT
+        </p>
     </body>
 </html>
