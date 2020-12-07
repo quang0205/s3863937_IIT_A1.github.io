@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Git and GitHub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">HomePage</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Git and GitHub at a glance.html">Introduction</a></li>
+                <li><a href="How to install Git and GitHub.html">Install Git-GitHub</a></li>
+                <li><a href="Basic Git commands.html">Basic Git Command</a></li>
+                <li><a href="How to resolve conflicts.html">Resolve Conflicts</a></li>
+                <li><a href="Branching.html">Branching</a></li>
+                <li><a href="Extra tutorial.html">Extra tutorial</a></li>
+            </ul>
+        </nav>
+            		<!-- Heading -->
+			<div id="heading" >
+				<h1><strong><u>Basic Git commands</u></strong></h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+                        <ol>
+                            <li><strong> git clone</strong> (use to create a clone of your repository and download it in other to repear for edit it on Visual Studio Code)</li>
+                                <ul>
+                                    <li><strong>Syntax:</strong> git clone [{URL}]</li>
+                                    <p>Copy and download your repository from the GitHub page</p>
+                                    <p>In your <strong>repository</strong></p>
+                                    <img src="./Picture/git clone 2.JPG" />
+                                    <p>In your Visual Studio Code write syntax</p>
+                                    <img src="./Picture/git clone 3.JPG" />
+                                </ul>
+                            <li><strong> config</strong></li>
+                                <ul>
+                                    <li><strong>Syntax:</strong> git config</li>
+                                    <p>Will show the list of <strong>git config command</strong></p>
+                                    <img src="./Picture/Git config.JPG" />
+                                    <li><strong>Syntax:</strong> git config [{option}]</li>
+                                    <p>The general syntax of <strong>the git config command</strong>, where <strong>option</strong> is the command the user wants to use</p>
+                                    <li><strong>Syntax:</strong> git config -l </li>
+                                    <p>Open the git info list</p>
+                                    <img src="./Picture/git config -l.JPG" />
+                                    <li>*<strong>Syntax:</strong> git config --gobal user.name 'username'</li>
+                                    <p>User Name Settings</p>
+                                    <img src="./Picture/Gift config username.JPG" />
+                                    <li>*<strong>Syntax:</strong> git config --gobal user.email 'useremail'</li>
+                                    <p>User Email Settings</p>
+                                    <img src="./Picture/Git config email.JPG" />
+                                    <p><strong> Note </strong>*:If they are not used, when using the <strong>push</strong> command will have an <strong>anonymous</strong>  error</p>
+                                </ul>
+                            <li><strong>add</strong> (use after you <strong>make a changes</strong> in your file)</li>
+                                <ul>
+                                    <li><strong>Syntax:</strong> git add [{filename}]</li>
+                                    <p>Add one file to index</p>
+                                    <img src="./Picture/git add file name.JPG" />
+                                    <li><strong>Syntax:</strong> git add . </li>
+                                    <p>Add all file to index</p>
+                                    <img src="./Picture/gitadd.JPG" />
+                                </ul>
+                            <li><strong>commit</strong> (use after you use <strong>git add</strong>)</li>
+                                <ul>
+                                    <li><strong>Syntax:</strong> git commit -m'message'</li>
+                                    <p>Commit the changes to head (but not yet to the remote repository)</p>
+                                    <img src="./Picture/git commit -m.JPG" />
+                                    <li><strong>Syntax:</strong> git commit -a</li>
+                                    <p>Commit all file added to index with <strong>git add</strong>, and commit any tiles changed since them</p>
+        
+                                </ul>
+                            <li><strong>push</strong> (use after <strong>git commit</strong>)</li>
+                                <ul>
+                                    <li><strong>Syntax:</strong> git push [:remote:][:branch:]</li>
+                                    <p>Used to push changes to remote repository </p>
+                                    <p>In your Visual Studio Code</p>
+                                    <img src="./Picture/Git push.JPG" />
+                                    <p>In your remote repository </p>
+                                    <img src="./Picture/git push remote repository.JPG" />
+                                </ul>
+                            <li><strong>pull</strong></li>
+                                <ul>
+                                    <li><strong>Syntax:</strong> git pull [:remote:][:branch:]</li>
+                                    <p>Use to update the latest changes from the remote repository, and then put the content in your local repository.</p>
+                                    <img src="./Picture/Git pull.JPG" />
+                                </ul>
+                        </ol>
+					</div>
+				</div>
+			</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="inner">
+        <div class="content">
+            <section>
+                <h4><Strong><u>Assingment Information </u></Strong></h4>
+                <ul class="alt">
+                    <li><strong>Author:</strong> Nguyen Nhat Quang</li>
+                    <li><strong>Course code and name:</strong> COSC2083 Intro to IT</li>
+                    <li><Strong>Assingment:</Strong> Group Participation</li>
+                    <li><strong>Lecturer:</strong>Duy Dang Pham</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h4><Strong><u>Contact me</u></Strong></h4>
+                <ul class="plain">
+                    <li><i class="icon fa-envelope-square">&nbsp;</i>s3863937@rmit.edu.vn</a></li>
+                    <li><a href="https://github.com/quang0205"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="copyright">
+            &copy; Untitled. Photos <a href="https://unsplash.co">Unsplash</a>, Video <a href="https://coverr.co">Coverr</a>.
+        </div>
+    </div>
+</footer>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
